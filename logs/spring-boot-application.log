@@ -1,0 +1,75 @@
+2025-04-04 12:46:06 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-04 12:46:06 INFO  c.e.spring_pr3.SpringPr3Application - Starting SpringPr3Application using Java 23 with PID 168 (C:\Users\Olesia\IdeaProjects\newspring\spring_pr3\target\classes started by Olesia in C:\Users\Olesia\IdeaProjects\newspring)
+2025-04-04 12:46:06 INFO  c.e.spring_pr3.SpringPr3Application - No active profile set, falling back to 1 default profile: "default"
+2025-04-04 12:46:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04 12:46:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2025-04-04 12:46:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-04 12:46:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 12:46:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-04 12:46:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-04-04 12:46:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-04 12:46:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1788 ms
+2025-04-04 12:46:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-04 12:46:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-04-04 12:46:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-04 12:46:08 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-04 12:46:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04 12:46:08 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-04-04 12:46:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-04 12:46:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-04 12:46:10 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-04 12:46:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 12:46:10 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04 12:46:11 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 12:46:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-04 12:46:11 INFO  c.e.spring_pr3.SpringPr3Application - Started SpringPr3Application in 5.668 seconds (process running for 6.49)
+2025-04-04 12:46:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 12:46:23 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-04 12:46:23 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-04 12:46:23 INFO  c.e.s.c.StudentRestController - POST /api/students - Payload: RequestStudentDTO(name=test, age=19)
+2025-04-04 12:46:23 INFO  c.e.s.service.StudentServiceImpl - Створення нового студента: RequestStudentDTO(name=test, age=19)
+2025-04-04 12:46:48 INFO  c.e.s.c.StudentRestController - GET /api/students
+2025-04-04 12:46:48 INFO  c.e.s.service.StudentServiceImpl - Отримання всіх студентів
+2025-04-04 12:47:13 INFO  c.e.s.c.StudentRestController - POST /api/students - Payload: RequestStudentDTO(name=logback, age=20)
+2025-04-04 12:47:13 INFO  c.e.s.service.StudentServiceImpl - Створення нового студента: RequestStudentDTO(name=logback, age=20)
+2025-04-04 12:49:13 INFO  c.e.s.service.StudentServiceImpl - Отримання всіх студентів
+2025-04-04 12:51:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 12:51:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-04 12:51:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-04 12:51:33 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-04 12:51:33 INFO  c.e.spring_pr3.SpringPr3Application - Starting SpringPr3Application using Java 23 with PID 10564 (C:\Users\Olesia\IdeaProjects\newspring\spring_pr3\target\classes started by Olesia in C:\Users\Olesia\IdeaProjects\newspring)
+2025-04-04 12:51:33 INFO  c.e.spring_pr3.SpringPr3Application - No active profile set, falling back to 1 default profile: "default"
+2025-04-04 12:51:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04 12:51:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2025-04-04 12:51:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-04 12:51:35 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 12:51:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-04 12:51:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-04-04 12:51:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-04 12:51:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1674 ms
+2025-04-04 12:51:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-04 12:51:35 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-04-04 12:51:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-04 12:51:35 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-04 12:51:35 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04 12:51:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-04-04 12:51:35 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-04 12:51:35 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-04 12:51:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-04 12:51:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 12:51:37 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04 12:51:38 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 12:51:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-04 12:51:38 INFO  c.e.spring_pr3.SpringPr3Application - Started SpringPr3Application in 5.516 seconds (process running for 6.322)
+2025-04-04 12:51:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 12:51:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-04 12:51:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-04 12:51:51 INFO  c.e.s.c.StudentRestController - POST /api/students - Payload: RequestStudentDTO(name=test, age=20)
+2025-04-04 12:51:51 INFO  c.e.s.service.StudentServiceImpl - Створення нового студента: RequestStudentDTO(name=test, age=20)
+2025-04-04 12:55:33 INFO  c.e.s.c.StudentRestController - POST /api/students - Payload: RequestStudentDTO(name=olesia, age=20)
+2025-04-04 12:55:33 INFO  c.e.s.service.StudentServiceImpl - Створення нового студента: RequestStudentDTO(name=olesia, age=20)
+2025-04-04 12:55:48 INFO  c.e.s.c.StudentRestController - GET /api/students
+2025-04-04 12:55:48 INFO  c.e.s.service.StudentServiceImpl - Отримання всіх студентів
+2025-04-04 12:56:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 12:56:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-04 12:56:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
