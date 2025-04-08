@@ -8,6 +8,7 @@
 <div class="container mt-5">
     <h2 class="mb-4">Список студентів</h2>
     <a href="/students/add" class="btn btn-success mb-3">Додати студента</a>
+
     <table class="table table-bordered">
         <thead class="thead-light">
         <tr>
@@ -30,6 +31,14 @@
         </tr>
         </tbody>
     </table>
+
+    <form th:action="@{/logout}" method="post" style="display:inline;">
+        <button type="submit" class="btn btn-danger btn-sm">Вийти</button>
+    </form>
+
+
+
+
 </div>
 </body>
 </html>

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.security.access.AccessDeniedException;
 
 import jakarta.validation.Valid;
 import java.util.List;
@@ -64,4 +65,11 @@ public class StudentController {
         studentService.deleteStudent(id);
         return "redirect:/students";
     }
+
+    @GetMapping("/access-denied")
+    public String accessDenied() {
+        return "access-denied"; // access-denied.html
+    }
 }
+
+
