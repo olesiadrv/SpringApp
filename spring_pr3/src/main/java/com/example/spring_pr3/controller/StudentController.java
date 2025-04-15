@@ -71,5 +71,3 @@ public class StudentController {
         return "access-denied"; // access-denied.html
     }
 }
-
-

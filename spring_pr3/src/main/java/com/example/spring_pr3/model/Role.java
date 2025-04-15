@@ -14,7 +14,19 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Role name cannot be empty")
-    @Column(unique = true)
+    @NotBlank
     private String name;
+
+    // Тепер цей конструктор буде автоматично згенерований анотацією @AllArgsConstructor
+    // public Role(Long id, String name) {
+    //     this.id = id;
+    //     this.name = name;
+    // }
+
+    // Якщо потрібно конструктор тільки з іменем:
+    public Role(String name) {
+        this.name = name;
+    }
+
+    // геттери та сеттери автоматично генеруються за допомогою анотації @Data
 }
