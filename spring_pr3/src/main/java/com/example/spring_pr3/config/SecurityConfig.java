@@ -18,8 +18,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig {
 
-
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
@@ -27,10 +25,13 @@ public class SecurityConfig {
                         .requestMatchers("/home", "/login", "/error", "/access-denied", "/register").permitAll()
                         .requestMatchers("/students/add", "/students/edit/**", "/students/delete/**").hasRole("ADMIN")
                         .requestMatchers("/students").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers("/admin-panel").hasRole("ADMIN") // Доступ до адмін-панелі тільки для адміністраторів
                         .anyRequest().authenticated()
                 )
                 .formLogin(login -> login
-                        .defaultSuccessUrl("/students", true)
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/login-success", true)
+                        .failureUrl("/login?error=true")
                         .permitAll()
                 )
                 .logout(logout -> logout
@@ -48,5 +49,5 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
 }
+
